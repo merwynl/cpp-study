@@ -24,7 +24,7 @@ bool PlayGame(int Difficulty)
 
     // Print CodeSum & CodeProduct to the terminal
     std::cout << "+ There are 3 keys in the code";
-    std::cout << "\n+ The codes add up to: " << CodeSum ;
+    std::cout << "\n+ The codes add up to: " << CodeSum;
     std::cout << "\n+ The codes multiply to give: " << CodeProduct << std::endl;
     std::cout << std::endl;
 
@@ -34,12 +34,12 @@ bool PlayGame(int Difficulty)
     int GuessSum = GuessA + GuessB + GuessC;
     int GuessProduct = GuessA * GuessB * GuessC;
 
-    if(GuessSum == CodeSum && GuessProduct == CodeProduct)
+    if (GuessSum == CodeSum && GuessProduct == CodeProduct)
     {
-        std::cout <<"\nWell done! You have defeated this group of yokai!\n\n";
+        std::cout << "\nWell done! You have defeated this group of yokai!\n\n";
         return true;
     }
-    else{
+    else {
         std::cout << "\nUh-oh! You've lose this battle and the yokai are on a rampage!\n\n";
         return false;
     }
@@ -52,7 +52,7 @@ int main()
 
     int LevelDifficulty = 1;
     const int MaxLevel = 5;
-    while(LevelDifficulty <= MaxLevel) // Loop game until all levels are completed
+    while (LevelDifficulty <= MaxLevel) // Loop game until all levels are completed
     {
         bool bLevelComplete = PlayGame(LevelDifficulty);
         std::cin.clear(); // Clears any errors
@@ -64,6 +64,6 @@ int main()
         }
 
     }
-    std::cout <<"\nCongratulations! You have defeated all the yokai and saved the village!";
+    std::cout << "\nCongratulations! You have defeated all the yokai and saved the village!";
     return 0;
 }
