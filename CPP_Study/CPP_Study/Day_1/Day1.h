@@ -1,7 +1,6 @@
 #pragma once
 
-class basics
+struct Day1
 {
-public:
     
 };

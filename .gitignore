@@ -4,6 +4,10 @@ x64/
 #  Rider workspace files
 .idea/
 
+#  VS workspace files
+.vscode/
+.vs/
+
 # Prerequisites
 *.d
 
