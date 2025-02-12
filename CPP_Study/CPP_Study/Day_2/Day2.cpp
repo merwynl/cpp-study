@@ -11,8 +11,8 @@ https://www.reddit.com/r/cpp_questions/comments/o9gmjc/why_is_using_namespace_st
 #include <iostream>
 #include <ostream>
 
-/* Uncomment to run */
- int main()
+/* Main Function */
+ int DataTypes()
  {
      // Declaring & printing variables
      char myCharacter = 'Y';
@@ -21,7 +21,7 @@ https://www.reddit.com/r/cpp_questions/comments/o9gmjc/why_is_using_namespace_st
   
      std:: cout << myCharacter << '\n';
      std:: cout << myInt << '\n';
-
+ 
      // Reassigning variables
      myCharacter = 'N';
      myInt = 20;
@@ -39,11 +39,11 @@ https://www.reddit.com/r/cpp_questions/comments/o9gmjc/why_is_using_namespace_st
     {
      std::cout << "a in larger than b" << '\n';
     }
-
+ 
     // Else If Statements
     int x = 5;
     int y = 10;
-
+ 
     if (x == y)
     {
      std::cout << "x is equal to y" << '\n';
@@ -62,5 +62,6 @@ https://www.reddit.com/r/cpp_questions/comments/o9gmjc/why_is_using_namespace_st
   system("pause"); // Pauses the program until the user presses a key.
   */
   std::cin.get();
+  return 0;
  }
 
