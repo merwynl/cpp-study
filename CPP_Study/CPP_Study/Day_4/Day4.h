@@ -1,6 +1,6 @@
 #pragma once
 
-class Day1
+class Day4
 {
     
 };
