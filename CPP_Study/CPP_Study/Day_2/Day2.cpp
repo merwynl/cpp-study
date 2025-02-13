@@ -11,7 +11,7 @@ https://www.reddit.com/r/cpp_questions/comments/o9gmjc/why_is_using_namespace_st
 #include <iostream>
 #include <ostream>
 
-/* Main Function */
+/* Main Function body - Rename to main run */
  int DataTypes()
  {
      // Declaring & printing variables
@@ -28,8 +28,23 @@ https://www.reddit.com/r/cpp_questions/comments/o9gmjc/why_is_using_namespace_st
      std:: cout << myCharacter << '\n';
      std:: cout << myInt << '\n';
      
-     // If Statements
-    int a(1); // Alternate method of declaring a variable
+   /**
+   * If statements:
+   * 
+   *      - Compares the results of an expression, then performs some action based on that result.
+   *      - If statements can be chained using else and else if statement
+   *      - Else if statement can be used to compare a separate set of expressions.
+   *      - Multiple else if conditions can be invoked to verify the result of something.
+   *      https://zenn.dev/posita33/books/ue5_starter_cpp_and_bp_001/viewer/chap_a0161_if_statement
+   *      https://zenn.dev/posita33/books/ue5_starter_cpp_and_bp_001/viewer/chap_a0104_statement_and_function
+   *      https://www.w3schools.com/cpp/cpp_conditions.asp
+   *      https://cplusplus.com/doc/tutorial/control/
+   */
+
+    // Alternate method of declaring a variable
+    int a(1);
+
+  
     int b = 13;
     if (b < a)
     {

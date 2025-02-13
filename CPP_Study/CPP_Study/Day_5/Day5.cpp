@@ -1,24 +1,24 @@
-#include "Day5.h"
-
-// Functions
+// Functions & User Input
 
 // Built in library that includes functions for input/output streams.
 #include <iostream>
 #include <ostream>
 
-// Declaring a function through a function prototype whereby the main function body comes later.
-// This is useful for defining many functions that you'll need in a document 
+/* Declaring a function through a function prototype whereby the main function body comes later.
+* This is useful for defining in advance, many functions that you'll need in a document.
+* */
+
 void Welcome();
 void GetQuestion();
 char GetUserInput();
 void PrintResponse(char ResponseToPrint);
 
-
-/* Uncomment to run */
-int main()
+/* Main Function body - Rename to main run */
+int QueryUserInput()
 {
     GetQuestion();
     std::cin.get();
+    return 0;
 }
 
 void Welcome()
@@ -57,4 +57,15 @@ char GetUserInput()
     std::cin >> GetResponse;
     
     return GetResponse;
+}
+
+
+// 使い方
+char ExampleUserInput()
+{
+    char UserInput;
+    
+    // Gets some user input and returns it
+    std::cin >> UserInput;
+    return UserInput;
 }

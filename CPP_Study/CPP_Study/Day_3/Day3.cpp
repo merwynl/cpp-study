@@ -5,11 +5,10 @@
 #include <ostream>
 
 // Global variables. Variables declared globally outside a function can be utilized across all scopes.
-
-/* Main Function */
 int a = 10;
 int b = 100;
 
+/* Main Function body - Rename to main run */
 int Scope()
 {
     // Local vars

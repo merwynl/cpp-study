@@ -9,7 +9,7 @@
 #include <iostream>
 #include <ostream>
 
-/* Main Function */
+/* Main Function body - Rename to main run */
 int PrintingString()
  {
   // Printing a string to the console. \n starts a new line.  

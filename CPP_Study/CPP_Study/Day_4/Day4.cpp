@@ -1,6 +1,5 @@
 // Functions
 
-// Built in library that includes functions for input/output streams.
 #include <iostream>
 #include <ostream>
 
@@ -24,7 +23,7 @@ int BasicFunction (int a, int b)
     return Result;
 };
 
-/* Uncomment to run */
+/* Main Function body - Rename to main run */
 int Functions()
 {
     // Calls the welcome function
@@ -51,3 +50,10 @@ int Functions()
     return 0;
 }
 
+
+// 使い方
+void ExampleFunction()
+{
+    // この機能 は何らかの操作を行う!
+    std::cout << "Do some operation " << '\n';  
+}
