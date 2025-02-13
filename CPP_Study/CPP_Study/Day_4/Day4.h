@@ -1,6 +1,6 @@
 #pragma once
 
-struct Day4
+class Day4
 {
     
 };

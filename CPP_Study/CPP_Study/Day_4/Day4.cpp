@@ -4,13 +4,13 @@
 #include <iostream>
 #include <ostream>
 
-// Printing a basic string
-void Welcome()
+// Function that prints a basic string
+void HelloWorld()
 {
-    std::cout << "Welcome!" << '\n';  
+    std::cout << "Hello!" << '\n';  
 }
 
-// Printing an value
+// Function that takes an int input and prints that input
 void PrintNumber(int NumToPrint)
 {
     std::cout << NumToPrint << '\n';
@@ -19,19 +19,21 @@ void PrintNumber(int NumToPrint)
 // Basic function that takes two values, adds them and returns the result 
 int BasicFunction (int a, int b)
 {
-    int LocalVar = a + b;
-    std::cout << LocalVar << '\n'; 
-    return LocalVar;
+    int Result = a + b;
+    // std::cout << Result << '\n'; 
+    return Result;
 };
 
 /* Uncomment to run */
-int main()
+int Functions()
 {
-    Welcome();
+    // Calls the welcome function
+    HelloWorld();
+
+    // Calls the print number function and passes in a literal value
+    PrintNumber(3);
     
-    PrintNumber(5);
-    
-    // Calling a basic function by passing in two literal values
+    // Calling a basic function and passes in two literal values
     int Var = BasicFunction(2,3);
     
     // Passing in variable
@@ -39,6 +41,13 @@ int main()
     
     // Chaining multiple function calls
     int Var3 = BasicFunction(Var,Var2);
+    
+    // Prints the result of the assigned Var's & function calls 
+    PrintNumber(BasicFunction(2,3));
+    PrintNumber(Var2);
+    PrintNumber(Var3);
+
     std::cin.get();
+    return 0;
 }
 
