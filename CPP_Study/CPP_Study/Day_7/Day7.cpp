@@ -14,7 +14,7 @@ void WhileLoop();
 void DoWhile();
 
 /* Uncomment to run */
-int main()
+int WhileLoops()
 {
     std::cin.get();
     return 0;
@@ -29,6 +29,7 @@ int main()
  *      https://zenn.dev/posita33/books/ue5_starter_cpp_and_bp_001/viewer/chap_a0175_while_loop
  */
 
+// 使い方
 void ExampleWhileLoopOne()
 {
     float x = 0.00;
@@ -36,19 +37,19 @@ void ExampleWhileLoopOne()
     while (x< 5.00)
     {
         // 繰り返し実行されるコード
-        x += 0.01;
+        x += 0.01f;
     }
 }
 
-// 例 1
+// 例 2
 void ExampleWhileLoopTwo()
 {
     // Checks if x is less than y, while x is less than y, keep incrementing by 0.01
-    float x = 0.00;
-    float y = 5.00;
+    float x = 0.00f;
+    float y = 5.00f;
     while (x < y)
     {
-        x += 0.01;
+        x += 0.01f;
         std::cout << x << '\n';
     }
 }
@@ -74,9 +75,3 @@ void ExampleDoWhile()
     //"条件"
     while (d1 < d2);
 }
-
-// 例 1
-
-
-
-// 例 2

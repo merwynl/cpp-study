@@ -9,8 +9,8 @@ int a = 10;
 int b = 100;
 
 /* Main Function body - Rename to main run */
-int Scope()
-{
+    int Scope()
+    {
     // Local vars
     int x = 57;
     {
