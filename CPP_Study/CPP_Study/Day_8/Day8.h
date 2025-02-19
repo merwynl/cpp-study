@@ -1,7 +1,8 @@
 #pragma once
 
-class Day8
-{
-public:
-    
-};
+int BasicForLoop(int i);
+
+
+void ExampleWhileLoopOne();
+void ExampleWhileLoopTwo();
+void ExampleDoWhile();

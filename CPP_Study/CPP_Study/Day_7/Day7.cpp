@@ -1,77 +1,42 @@
-// While & Do While Loops
-
+#include "../Day_1/Day1.h"
 #include "Day7.h"
 #include <iostream>
-#include <ostream>
 
 /**
- * Declaring a function through a function prototype whereby the main function body comes later.
- * This is useful for defining many functions that you'll need in a document 
- * Note that until this function is called, calls to AsShared() will result in an empty pointer.
- */
+   * For Loops:
+   * Useful to run code a specific number of times.
+   *    - e.g: Printing a statement 5 times.
+   * Useful for big picture items: e.g: think of a game loop
+   * Useful for arrays
+   * 
+   * Requires 3 components, separated by a semicolon;:
+   *    - A variable declaration (typical convention is to use i for iterator - is triggered once)
+   *    - A condition that basically says while a condition is true, keep executing code
+   *    - An increment operation (increment the assigned variable by a given value - occurs at the end of the loop)
+   *    
+   * Can take some input and return an output
+   * https://www.w3schools.com/cpp/cpp_for_loop.asp
+   * https://en.cppreference.com/w/cpp/language/for
+   * https://www.geeksforgeeks.org/cpp-loops/
+   * https://techis.jp/guide/cpp/cpp_for_loop
+   * https://learn.microsoft.com/ja-jp/cpp/cpp/for-statement-cpp
+   * 
+*/
 
-void WhileLoop();
-void DoWhile();
 
-/* Uncomment to run */
-int WhileLoops()
+int ForLoops()
 {
+    BasicForLoop(4);
     std::cin.get();
     return 0;
 }
 
-/**
- * While Loops:
- * 
- *      - Below are how do while loops are written out
- *      - Checks for a condition/statement and performs an operation until that condition is no longer met. 
- *      - NOTE: Statements in a while loop that doesn't result is some data change may cause an infinite loop.
- *      https://zenn.dev/posita33/books/ue5_starter_cpp_and_bp_001/viewer/chap_a0175_while_loop
- */
-
-// 使い方
-void ExampleWhileLoopOne()
+// Basic for loop that iterates over i and prints some text until i is == 5
+int BasicForLoop(int i)
 {
-    float x = 0.00;
-    //"条件"
-    while (x< 5.00)
+    for (; i < 5; i++)
     {
-        // 繰り返し実行されるコード
-        x += 0.01f;
+        Log("Hello World!");
     }
-}
-
-// 例 2
-void ExampleWhileLoopTwo()
-{
-    // Checks if x is less than y, while x is less than y, keep incrementing by 0.01
-    float x = 0.00f;
-    float y = 5.00f;
-    while (x < y)
-    {
-        x += 0.01f;
-        std::cout << x << '\n';
-    }
-}
-
-/**
- * Do While :
- * 
- *      - Run the body at least once
- *      - Will then enter a loop until the condition is no longer true.
- *      https://techis.jp/guide/cpp/cpp_do_while_loop
- */
-
-// 使い方
-void ExampleDoWhile()
-{
-    double d1 = 0.10;
-    double d2 = 0.40;
-    do
-    {
-        // 繰り返し実行されるコード
-        d1 += 0.01;
-    }
-    //"条件"
-    while (d1 < d2);
+    return 0;
 }

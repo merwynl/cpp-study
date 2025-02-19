@@ -1,7 +1,3 @@
 #pragma once
 
-class Day7
-{
-public:
-    
-};
+int BasicForLoop(int i);
