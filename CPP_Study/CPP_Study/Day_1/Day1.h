@@ -15,6 +15,9 @@ void HelloWorld();
 void PrintNumber(int NumToPrint);
 void PrintResponse(char ResponseToPrint);
 
+float LogFloat(float FloatNumber);
+int LogInt(int IntNumber);
+
 // Increments
 void IncrementInt();
 void ExampleIncrementalOperator();

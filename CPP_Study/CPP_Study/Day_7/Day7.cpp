@@ -23,20 +23,43 @@
    * 
 */
 
-
-int ForLoops()
+/* Main Function body - Rename to main run */
+int main()
 {
-    BasicForLoop(4);
+    ExampleForLoopTwo(0);
     std::cin.get();
     return 0;
 }
 
-// Basic for loop that iterates over i and prints some text until i is == 5
+// 使い方
 int BasicForLoop(int i)
 {
     for (; i < 5; i++)
     {
         Log("Hello World!");
+    }
+    return 0;
+}
+
+// 例 1
+int ExampleForLoopOne(int x)
+{
+    for (x; x < 10; x++)
+    {
+       LogInt(x); 
+    }
+    return x;
+}
+
+// 例 2
+int ExampleForLoopTwo(int outer)
+{
+    for (; outer <= 10; outer++)
+    {
+        for (int inner = 0; inner <= 10; inner++)
+        {
+          std::cout << "outer = " << outer << ", inner = " << inner << '\n';  
+        }
     }
     return 0;
 }

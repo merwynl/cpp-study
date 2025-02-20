@@ -12,16 +12,23 @@ static int Multiply (int a, int b)
     return a * b;
 }
 
+/* Main Function body - Rename to main run */
 int HeaderFiles()
 {
     int x = Multiply(2,4);
     x++;
     const char* message = "Hello";
+    LogInt(x);
+
+    Log("====================");
+    
     for (int i = 0; i < 5; i++)
     {
         const char c = message[i];
         std::cout << c << '\n';
     }
+    Log("====================");
+    
     Log("Hello World!");
     std::cin.get();
     return 0;

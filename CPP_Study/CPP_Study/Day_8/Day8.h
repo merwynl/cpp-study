@@ -1,8 +1,11 @@
 #pragma once
 
-int BasicForLoop(int i);
-
-
 void ExampleWhileLoopOne();
 void ExampleWhileLoopTwo();
-void ExampleDoWhile();
+void ExampleWhileLoopThree();
+
+void ExampleDoWhileOne();
+void ExampleDoWhileTwo();
+
+int ExampleContinue(int j);
+int ExampleBreak(int a, int b);

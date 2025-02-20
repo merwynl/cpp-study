@@ -3,6 +3,7 @@
 // Built in library that includes functions for input/output streams.
 #include <iostream>
 #include <ostream>
+#include "../Day_1/Day1.h"
 
 /**
     * Declaring a functions through a function prototype whereby the main function body comes later.
@@ -25,7 +26,7 @@ int QueryUserInput()
 void Welcome()
 {
     // Prints a welcome note
-    std::cout << "Welcome!" << '\n';  
+    Log( "Welcome!");
 }
 
 void PrintResponse(char ResponseToPrint)
@@ -49,7 +50,8 @@ void GetQuestion()
 char GetUserInput()
 {
     // Regular print output statement
-    std::cout << "Please enter y/n: ";
+    Log("Please enter y/n: ");
+    // std::cout << "Please enter y/n: ";
 
     // Char denotes single character types. MOre characters are not allowed
     char GetResponse;

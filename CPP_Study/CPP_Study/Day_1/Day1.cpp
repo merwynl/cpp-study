@@ -32,3 +32,16 @@ void Log(const char* message)
 {
  std::cout << message << '\n';
 }
+
+
+int LogInt(int IntNumber)
+{
+ std::cout << IntNumber << '\n';
+ return IntNumber;
+}
+
+float LogFloat(float FloatNumber)
+{
+ std::cout << FloatNumber << '\n';
+ return FloatNumber;
+}
