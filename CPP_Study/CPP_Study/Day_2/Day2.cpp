@@ -9,7 +9,6 @@ https://www.reddit.com/r/cpp_questions/comments/o9gmjc/why_is_using_namespace_st
 
 // Built in library that includes functions for input/output streams.
 #include <iostream>
-#include <ostream>
 #include "../Day_1/Day1.h"
 #include "Day2.h"
 
@@ -29,8 +28,9 @@ int Variables()
   myCharacter = 'N';
   myInt = 20;
   myFloat = 2.0f;
-  std::cout << myCharacter << '\n';
-  std::cout << myInt << '\n';
+  Log(&myCharacter);
+  LogInt(myInt);
+  LogFloat(myFloat);
 
   IfStatement();
   IfStatementComparison();

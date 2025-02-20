@@ -2,7 +2,6 @@
 
 // Built in library that includes functions for input/output streams.
 #include <iostream>
-#include <ostream>
 
 // Declaring a function through a function prototype whereby the main function body comes later.
 // This is useful for defining many functions that you'll need in a document 

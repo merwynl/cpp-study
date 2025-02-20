@@ -24,9 +24,9 @@
 */
 
 /* Main Function body - Rename to main run */
-int main()
+int ForLoops()
 {
-    ExampleForLoopTwo(0);
+    ExampleContinue(0);
     std::cin.get();
     return 0;
 }
@@ -63,3 +63,30 @@ int ExampleForLoopTwo(int outer)
     }
     return 0;
 }
+
+int ExampleContinue(int j)
+{
+    for (j; j < 5; j++)
+    {
+        if (j  % 2 == 0)
+            continue;
+        Log ("Hello World!");
+        LogInt(j);
+    }
+    return 0;
+}
+
+int ExampleBreak(int k)
+{
+    for (k; k < 5; k++)
+    {
+        if ((k + 1) % 2 == 0)
+            break;
+        Log ("Hello World!");
+        LogInt(k);
+    }
+    return 0;
+}
+
+
+

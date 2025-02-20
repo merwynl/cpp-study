@@ -2,7 +2,6 @@
 
 // Built in library that includes functions for input/output streams.
 #include <iostream>
-#include <ostream>
 #include "../Day_1/Day1.h"
 
 /**

@@ -66,8 +66,8 @@ void ExampleWhileLoopThree()
 }
 
 
-// 例 3
-int ExampleBreak(int a, int b)
+// 例 4
+int ExampleWhileLoopFour(int a, int b)
 {
     while (a <= b)
     {
@@ -140,7 +140,7 @@ void ExampleDoWhileTwo()
 
 
 // 例 3
-int ExampleContinue(int j)
+int ExampleDoWhileThree(int j)
 {
     do
     {

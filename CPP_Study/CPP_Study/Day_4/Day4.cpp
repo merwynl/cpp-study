@@ -1,7 +1,8 @@
 // Functions
 
 #include <iostream>
-#include <ostream>
+
+#include "../Day_1/Day1.h"
 
 /**
    * Functions:
@@ -20,20 +21,20 @@
 // Function that prints a basic string
 void HelloWorld()
 {
-    std::cout << "Hello!" << '\n';
+    Log("Hello!"); // std::cout << "Hello!" << '\n';
 }
 
 // Function that takes an int input and prints that input
 void PrintNumber(int NumToPrint)
 {
-    std::cout << NumToPrint << '\n';
+    LogInt(NumToPrint); // std::cout << NumToPrint << '\n';
 }
 
 // Basic function that takes two values, adds them and returns the result 
 int BasicFunction(int a, int b)
 {
     int Result = a + b;
-    // std::cout << Result << '\n'; 
+    LogInt(Result); // std::cout << Result << '\n';
     return Result;
 };
 
@@ -55,7 +56,7 @@ int Functions()
     // Chaining multiple function calls
     int Var3 = BasicFunction(Var, Var2);
 
-    // Prints the result of the assigned Var's & function calls 
+    // Prints the result of the assigned vars & function calls 
     PrintNumber(BasicFunction(2, 3));
     PrintNumber(Var2);
     PrintNumber(Var3);
@@ -67,6 +68,6 @@ int Functions()
 // 使い方
 void ExampleFunction()
 {
-    // この関数は何らかの操作を行う!
-    std::cout << "Do some operation " << '\n';
+    // この関数は何らかの操作を行う! std::cout << "Do some operation " << '\n';
+    Log("Do some operation");
 }

@@ -2,7 +2,6 @@
 
 // Built in library that includes functions for input/output streams.
 #include <iostream>
-#include <ostream>
 
 // Global variables. Variables declared globally outside a function can be utilized across all scopes.
 int a = 10;
