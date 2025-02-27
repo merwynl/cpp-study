@@ -1,6 +1,7 @@
 #pragma once
 
-class Day2
-{
-    
-};
+void IfStatement();
+void IfStatementComparison();
+void SimplifiedComparison();
+void IfPtr();
+void IfElseStatements();

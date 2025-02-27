@@ -2,16 +2,14 @@
 
 // Built in library that includes functions for input/output streams.
 #include <iostream>
-#include <ostream>
 
 // Global variables. Variables declared globally outside a function can be utilized across all scopes.
-
-/* Main Function */
 int a = 10;
 int b = 100;
 
-int Scope()
-{
+/* Main Function body - Rename to main run */
+    int Scope()
+    {
     // Local vars
     int x = 57;
     {

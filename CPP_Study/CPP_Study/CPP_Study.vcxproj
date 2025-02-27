@@ -81,7 +81,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)\bin\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)\bin\Intermediates\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir>$(SolutionDir)\bin\Intermediates\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -162,18 +162,30 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Day_10\Day10.cpp" />
+    <ClCompile Include="Day_11\Day11.cpp" />
     <ClCompile Include="Day_1\Day1.cpp" />
     <ClCompile Include="Day_2\Day2.cpp" />
     <ClCompile Include="Day_3\Day3.cpp" />
     <ClCompile Include="Day_4\Day4.cpp" />
     <ClCompile Include="Day_5\Day5.cpp" />
+    <ClCompile Include="Day_6\Day6.cpp" />
+    <ClCompile Include="Day_7\Day7.cpp" />
+    <ClCompile Include="Day_8\Day8.cpp" />
+    <ClCompile Include="Day_9\Day9.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Day_10\Day10.h" />
+    <ClInclude Include="Day_11\Day11.h" />
     <ClInclude Include="Day_1\Day1.h" />
     <ClInclude Include="Day_2\Day2.h" />
     <ClInclude Include="Day_3\Day3.h" />
     <ClInclude Include="Day_4\Day4.h" />
     <ClInclude Include="Day_5\Day5.h" />
+    <ClInclude Include="Day_6\Day6.h" />
+    <ClInclude Include="Day_7\Day7.h" />
+    <ClInclude Include="Day_8\Day8.h" />
+    <ClInclude Include="Day_9\Day9.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
