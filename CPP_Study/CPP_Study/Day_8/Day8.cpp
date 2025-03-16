@@ -1,23 +1,34 @@
-#include "Day8.h"
-
-#include <iostream>
-
-#include "../Day_1/Day1.h"
-
 /**
  * While Loops:
+ *  
  *      - Similar to while loops except it just checks for a condition.
  *      - Checks for a condition/statement and performs an operation until that condition is no longer met.
  *      - While loops and for loops are somewhat interchangeable, the condition being if a var is required.
  *      - NOTE: Statements in a while loop that doesn't result is some data change may cause an infinite loop.
- *      https://zenn.dev/posita33/books/ue5_starter_cpp_and_bp_001/viewer/chap_a0175_while_loop
- *      https://learn.microsoft.com/ja-jp/cpp/cpp/while-statement-cpp?view=msvc-170
- *      https://www.simplilearn.com/tutorials/cpp-tutorial/while-loop-in-cpp
- *      https://www.geeksforgeeks.org/cpp-while-loop/
- *      https://www.w3schools.com/cpp/cpp_break.asp
+ *      - https://zenn.dev/posita33/books/ue5_starter_cpp_and_bp_001/viewer/chap_a0175_while_loop
+ *      - https://learn.microsoft.com/ja-jp/cpp/cpp/while-statement-cpp?view=msvc-170
+ *      - https://www.simplilearn.com/tutorials/cpp-tutorial/while-loop-in-cpp
+ *      - https://www.geeksforgeeks.org/cpp-while-loop/
+ *      - https://www.w3schools.com/cpp/cpp_break.asp
+ *      
+ * Do While :
+ * 
+ *      - Run the body at least once
+ *      - Will then enter a loop until the condition is no longer true.
+ *      - https://www.programiz.com/cpp-programming/do-while-loop
+ *      - https://www.w3schools.com/cpp/cpp_do_while_loop.asp
+ *      - https://cplusplus.com/doc/tutorial/control/
+ *      - https://learn.microsoft.com/ja-jp/cpp/cpp/do-while-statement-cpp?view=msvc-170
+ *      - https://techis.jp/guide/cpp/cpp_do_while_loop
  */
 
-/* Main Function body - Rename to main run. Replace function call with one of the other functions to see effect*/
+#include "Day8.h"
+#include <iostream>
+#include "../Day_1/Day1.h"
+
+/**
+ * Main Function body - Rename to main run
+ */
 int Loops()
 {
     Log("Example Do Loop //// ===================");
@@ -26,7 +37,7 @@ int Loops()
     return 0;
 }
 
-// 使い方
+/** Continue to increment x by 0.01 and log the value of x while x is less than 5 */
 void ExampleWhileLoopOne()
 {
     float x = 0.00;
@@ -39,10 +50,9 @@ void ExampleWhileLoopOne()
     }
 }
 
-// 例 2
+/** Checks if x is less than y, while x is less than y, keep incrementing by 0.01 */
 void ExampleWhileLoopTwo()
 {
-    // Checks if x is less than y, while x is less than y, keep incrementing by 0.01
     float x = 0.00f;
     float y = 5.00f;
     while (x < y)
@@ -52,7 +62,6 @@ void ExampleWhileLoopTwo()
     }
 }
 
-// 例 3
 void ExampleWhileLoopThree()
 {
     int T = 0;
@@ -65,13 +74,12 @@ void ExampleWhileLoopThree()
     }
 }
 
-
-// 例 4
+/** A starts off as 2. Loop iteration occurs until number is > 50 */
 int ExampleWhileLoopFour(int a, int b)
 {
     while (a <= b)
     {
-        // A starts off as 2. Loop iteration occurs until number is > 50
+        
         a++;
         if (a>50)
         {
@@ -82,19 +90,6 @@ int ExampleWhileLoopFour(int a, int b)
     return a;
 }
 
-/**
- * Do While :
- * 
- *      - Run the body at least once
- *      - Will then enter a loop until the condition is no longer true.
- *      https://www.programiz.com/cpp-programming/do-while-loop
- *      https://www.w3schools.com/cpp/cpp_do_while_loop.asp
- *      https://cplusplus.com/doc/tutorial/control/
- *      https://learn.microsoft.com/ja-jp/cpp/cpp/do-while-statement-cpp?view=msvc-170
- *      https://techis.jp/guide/cpp/cpp_do_while_loop
- */
-
-// 使い方
 void ExampleDoWhileOne()
 {
     double d1 = 0.10;
@@ -109,7 +104,6 @@ void ExampleDoWhileOne()
     while (d1 < d2);
 }
 
-// 例 2
 void ExampleDoWhileTwo()
 {
     double Pi = 3.14159;
@@ -138,8 +132,6 @@ void ExampleDoWhileTwo()
     } while (Condition);
 }
 
-
-// 例 3
 int ExampleDoWhileThree(int j)
 {
     do

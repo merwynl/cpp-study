@@ -3,16 +3,18 @@
 
 /**
  * Shows an example of linking to a function in separate cpp file and the use of header files.
+ * An example of a static function to signify this function will only ever be declared for this translation unit
  */
 
-// An example of a static function to signify this function will only ever be declared for this translation unit 
 static int Multiply (int a, int b)
 {
     Log ("Result: ");
     return a * b;
 }
 
-/* Main Function body - Rename to main run */
+/**
+ * Main Function body - Rename to main run
+ */
 int HeaderFiles()
 {
     int x = Multiply(2,4);
